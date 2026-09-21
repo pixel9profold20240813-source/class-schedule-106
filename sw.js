@@ -1,4 +1,4 @@
-const CACHE = "schedule-106-v2";
+const CACHE = "schedule-106-v3";
 const ASSETS = ["./", "index.html", "style.css", "app.js", "data.js", "manifest.json", "icons/icon-192.png", "icons/icon-512.png"];
 
 self.addEventListener("install", (e) => {
@@ -70,7 +70,7 @@ async function updateStatusNotification() {
     title = "下課中";
     body = `下一節：${next.period.label} ${next.subject}（${next.period.start}）`;
   } else {
-    title = "106班課表";
+    title = "課表";
     body = "目前沒有課程";
   }
 
